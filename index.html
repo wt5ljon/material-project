@@ -45,21 +45,30 @@
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Photos</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small indigo" data-tooltip="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small indigo" data-tooltip="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small indigo" data-tooltip="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a></li>
         </ul>
         <ul class="sidenav grey lighten-2" id="mobile-menu">
-            <li><a href="#">Photos</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <!-- photo / grid -->
-  <section class="container section" id="photos">
+  <section class="container section scrollspy" id="photos">
     <div class="row">
       <div class="col s12 l4">
         <img src="images/portrait.jpg" alt="" class="responsive-img materialboxed" />
@@ -97,7 +106,7 @@
   </div>
 
   <!-- services / tabs -->
-  <section class="container section" id="services">
+  <section class="container section scrollspy" id="services">
     <div class="row">
       <div class="col s12 l4">
         <h2 class="indigo-text text-darken-4">What I Do...</h2>
@@ -135,11 +144,55 @@
   </div>
   
   <!-- contact form -->
-  <div class="container">
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum libero aspernatur dolores ab similique aperiam distinctio laboriosam. Impedit ab ipsum quam nihil possimus consectetur, accusantium libero blanditiis fuga nobis.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum libero aspernatur dolores ab similique aperiam distinctio laboriosam. Impedit ab ipsum quam nihil possimus consectetur, accusantium libero blanditiis fuga nobis.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum libero aspernatur dolores ab similique aperiam distinctio laboriosam. Impedit ab ipsum quam nihil possimus consectetur, accusantium libero blanditiis fuga nobis.</p>
-  </div>
+  <section class="section container scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, odio beatae neque 
+        voluptatibus doloribus dicta consequuntur modi velit consequatur corrupti.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, odio beatae neque 
+        voluptatibus doloribus dicta consequuntur modi velit consequatur corrupti.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, odio beatae neque 
+        voluptatibus doloribus dicta consequuntur modi velit consequatur corrupti.</p>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form action="">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea class="materialize-textarea" id="message"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Choose a date you need me for</label>
+          </div>
+          <div class="input-field">
+            <p>Services required...</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Photography</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Editing</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
   
   <!-- footer -->
   <footer class="page-footer grey darken-3">
@@ -177,6 +230,11 @@
       $('.materialboxed').materialbox();
       $('.parallax').parallax();
       $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
     });
   </script>
 </body>
