@@ -17,6 +17,16 @@
       background-position: center;
       min-height: 1000px;
     }
+    .section {
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    .tabs  .indicator {
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active {
+      background: transparent;
+    }
     @media screen and (max-width: 670px) {
       header {
         min-height: 500px;
@@ -49,16 +59,114 @@
   </header>
 
   <!-- photo / grid -->
+  <section class="container section" id="photos">
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="images/portrait.jpg" alt="" class="responsive-img materialboxed" />
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Portraits</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eos amet ratione cupiditate atque mollitia reiciendis labore doloremque in libero quidem unde, ad porro aliquid eaque iure veniam quae aperiam!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 push-l7 offset-l1">
+        <img src="images/city.jpg" alt="" class="responsive-img materialboxed" />
+      </div>
+      <div class="col s12 l6 pull-l5 right-align offset-l1">
+        <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eos amet ratione cupiditate atque mollitia reiciendis labore doloremque in libero quidem unde, ad porro aliquid eaque iure veniam quae aperiam!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="images/nature.jpg" alt="" class="responsive-img materialboxed" />
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Nature</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eos amet ratione cupiditate atque mollitia reiciendis labore doloremque in libero quidem unde, ad porro aliquid eaque iure veniam quae aperiam!</p>
+      </div>
+    </div>
+  </section>
 
   <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="./images/street.jpg" alt="" class="responsive-img"/>
+    </div>
+  </div>
 
   <!-- services / tabs -->
+  <section class="container section" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">What I Do...</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, enim dicta. Tenetur accusamus non vero velit adipisci error reiciendis. Corrupti commodi consequuntur consectetur tempora laborum accusamus praesentium voluptas quibusdam hic!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, enim dicta. Tenetur accusamus non vero velit adipisci error reiciendis. Corrupti commodi consequuntur consectetur tempora laborum accusamus praesentium voluptas quibusdam hic!</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+          </li>
+        </ul>
+        <div class="col s12" id="photography">
+          <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, enim dicta. Tenetur accusamus non vero velit adipisci error reiciendis. Corrupti commodi consequuntur consectetur tempora laborum accusamus praesentium voluptas quibusdam hic!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, enim dicta. Tenetur accusamus non vero velit adipisci error reiciendis. Corrupti commodi consequuntur consectetur tempora laborum accusamus praesentium voluptas quibusdam hic!</p>
+        </div>
+        <div class="col s12" id="editing">
+          <p class="flow-text indigo-text text-darken-4">EDITING</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, enim dicta. Tenetur accusamus non vero velit adipisci error reiciendis. Corrupti commodi consequuntur consectetur tempora laborum accusamus praesentium voluptas quibusdam hic!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, enim dicta. Tenetur accusamus non vero velit adipisci error reiciendis. Corrupti commodi consequuntur consectetur tempora laborum accusamus praesentium voluptas quibusdam hic!</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- parallax -->
-
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="./images/stars.jpg" alt="" class="responsive-img"/>
+    </div>
+  </div>
+  
   <!-- contact form -->
-
+  <div class="container">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum libero aspernatur dolores ab similique aperiam distinctio laboriosam. Impedit ab ipsum quam nihil possimus consectetur, accusantium libero blanditiis fuga nobis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum libero aspernatur dolores ab similique aperiam distinctio laboriosam. Impedit ab ipsum quam nihil possimus consectetur, accusantium libero blanditiis fuga nobis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum libero aspernatur dolores ab similique aperiam distinctio laboriosam. Impedit ab ipsum quam nihil possimus consectetur, accusantium libero blanditiis fuga nobis.</p>
+  </div>
+  
   <!-- footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l6">
+          <h5>About Me</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, odio beatae neque voluptatibus doloribus dicta consequuntur modi velit consequatur corrupti, eaque laudantium, accusantium dolorum debitis nam deleniti. Ex, harum? Animi!</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, odio beatae neque voluptatibus doloribus dicta consequuntur modi velit consequatur corrupti, eaque laudantium, accusantium dolorum debitis nam deleniti. Ex, harum? Animi!</p>
+        </div>
+        <div class="col s12 l4 offset-l2">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Linked In</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">
+        &copy;2018 Photo Ninja
+      </div>
+    </div>
+  </footer>
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -66,6 +174,9 @@
   <script>
     $(document).ready(function(){
       $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
     });
   </script>
 </body>
